@@ -87,7 +87,7 @@ h2.section-title::after{
   display:inline-block;border:1px solid var(--stroke);
   padding:.6rem 1rem;border-radius:999px;
   transition:transform .2s, background .2s, box-shadow .2s, border-color .2s, color .2s;
-  color:var(--text); text-decoration:none;
+  color:var(--text); text-decoration:none; cursor:pointer;
 }
 .btn:hover{transform:translateY(-2px)}
 .btn.primary{
@@ -99,7 +99,6 @@ h2.section-title::after{
 .btn.solid{
   background:rgba(255,255,255,.06); border-color:rgba(255,255,255,.12);
 }
-.btn:visited{color:inherit}
 
 /* Scroll cue */
 .scroll-indicator{font-size:2rem;opacity:.55;animation:bounce 1.5s infinite ease-in-out;text-align:center;margin-bottom:.75rem}
@@ -116,6 +115,7 @@ h2.section-title::after{
   background:linear-gradient(135deg, rgba(34,211,238,.25), rgba(167,139,250,.25));
   -webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   -webkit-mask-composite:xor; mask-composite:exclude; opacity:0; transition:opacity .25s ease;
+  pointer-events:none; /* <-- ensure the overlay never blocks clicks */
 }
 .card:hover{transform:translateY(-3px)}
 .card:hover::before{opacity:1}
@@ -135,29 +135,4 @@ h2.section-title::after{
 }
 .chips span:hover{transform:translateY(-2px); box-shadow:0 8px 18px rgba(167,139,250,.18)}
 
-/* ====== CONTACT (force clean white links) ====== */
-#contact .contact-line,
-#contact .contact-line a,
-#contact .contact-line a:visited{
-  color:var(--text) !important;
-  text-decoration:underline;
-  text-underline-offset:2px;
-}
-
-/* ====== REVEAL ANIMATIONS ====== */
-.section,.card{opacity:0; transform:translateY(10px); transition:opacity var(--speed) ease, transform var(--speed) ease}
-.in{opacity:1 !important; transform:translateY(0) !important}
-
-/* ====== ACCESSIBILITY: reduced motion ====== */
-@media (prefers-reduced-motion: reduce){
-  .bg.glow{animation:none}
-  .scroll-indicator{animation:none}
-  .section,.card{transition:none}
-  .accent{animation:none}
-}
-
-/* ====== RESPONSIVE ====== */
-@media (min-width:768px){
-  .nav{padding:1.25rem 1.5rem}
-  .hero-inner{padding:5rem 1.25rem}
-}
+/* ====== C*
