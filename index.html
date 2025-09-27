@@ -8,13 +8,10 @@
   <meta property="og:title" content="Hammaz Buksh — Portfolio" />
   <meta property="og:description" content="Selected projects, skills, experience, and contact info." />
   <meta property="og:type" content="website" />
-  <!-- Favicon optional; remove if you don't want it
-  <link rel="icon" href="assets/favicon.png" />
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=3" />
+  <link rel="stylesheet" href="style.css?v=4" />
 </head>
 <body>
   <!-- Animated background layers -->
@@ -70,7 +67,11 @@
           </p>
           <ul class="meta"><li>PyTorch</li><li>Computer Vision</li><li>Fair ML</li></ul>
           <div class="actions">
-            <a class="btn small" href="https://github.com/Hammazb/Using-CNN-to-Classify-Ethnicity-Pytorch" target="_blank" rel="noopener">Repo</a>
+            <a class="btn small solid"
+               href="https://github.com/Hammazb/Using-CNN-to-Classify-Ethnicity-Pytorch"
+               target="_blank" rel="noopener" aria-label="Open GitHub repository: UTKFace Ethnicity Classification">
+              View Repo
+            </a>
           </div>
         </div>
       </article>
@@ -84,12 +85,16 @@
           </p>
           <ul class="meta"><li>Python</li><li>scikit-learn</li><li>ML</li></ul>
           <div class="actions">
-            <a class="btn small" href="https://github.com/Hammazb/Predicting-Arrests-with-ML-Models" target="_blank" rel="noopener">Repo</a>
+            <a class="btn small solid"
+               href="https://github.com/Hammazb/Predicting-Arrests-with-ML-Models"
+               target="_blank" rel="noopener" aria-label="Open GitHub repository: Predicting Arrests with ML Models">
+              View Repo
+            </a>
           </div>
         </div>
       </article>
 
-      <!-- Optional: add more project cards here -->
+      <!-- Add more project cards here if you like -->
     </section>
 
     <!-- SKILLS -->
@@ -105,7 +110,7 @@
       </div>
     </section>
 
-    <!-- EXPERIENCE -->
+    <!-- EXPERIENCE (all roles) -->
     <section id="experience" class="section">
       <h2 class="section-title">Experience</h2>
 
@@ -116,7 +121,7 @@
             Built a multi-agent system with NVIDIA NeMo (planner/executor ReAct + ReWOO), custom tools (navigation, reviews, wait-times,
             ride-hailing, knowledge search), preference memory, safety guardrails, and RAG. Delivered a production-ready PoC for TD SYNNEX Inspire.
           </p>
-          <ul class="meta"><li>NeMo</li><li>RAG</li><li>Tool-augmented reasoning</li></ul>
+          <ul class="meta"><li>NeMo</li><li>RAG</li><li>Tool-Augmented Reasoning</li></ul>
         </div>
       </article>
 
@@ -124,9 +129,31 @@
         <div class="card-body">
           <h3>Graduate Assistant — University of South Florida</h3>
           <p>
-            Supported “Introduction to Python” course delivery; graded 200+ assignments; led labs and 1-on-1 sessions; improved learning outcomes through resources and feedback.
+            Supported “Introduction to Python” course delivery; graded 200+ assignments; led labs and 1-on-1 sessions; improved learning outcomes with resources and feedback.
           </p>
           <ul class="meta"><li>Teaching</li><li>Python</li><li>Academic Support</li></ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <h3>Research Assistant / Independent Study — USF</h3>
+          <p>
+            Deployed TensorFlow models for vessel detection in satellite data; built preprocessing/augmentation pipelines (OpenCV/NumPy);
+            documented architecture and training workflows.
+          </p>
+          <ul class="meta"><li>TensorFlow</li><li>OpenCV</li><li>DL Pipelines</li></ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <h3>Optimization Specialist — Action Holdings</h3>
+          <p>
+            Launched products via market research; designed advertising/pricing/PPC strategies; automated reporting and dashboards;
+            partnered with leadership on forecasting and operations efficiency.
+          </p>
+          <ul class="meta"><li>PPC</li><li>Analytics</li><li>Automation</li></ul>
         </div>
       </article>
     </section>
@@ -134,7 +161,7 @@
     <!-- CONTACT -->
     <section id="contact" class="section">
       <h2 class="section-title">Contact</h2>
-      <p>
+      <p class="contact-line">
         Email: <a href="mailto:mhammaz98@gmail.com">mhammaz98@gmail.com</a> ·
         LinkedIn: <a href="https://linkedin.com/in/hammazbuksh" target="_blank" rel="noopener">linkedin.com/in/hammazbuksh</a> ·
         GitHub: <a href="https://github.com/Hammazb" target="_blank" rel="noopener">github.com/Hammazb</a>
@@ -146,7 +173,7 @@
     <p>© <span id="year"></span> Hammaz Buksh · Built with HTML/CSS · Hosted on GitHub Pages</p>
   </footer>
 
-  <script src="script.js?v=3"></script>
+  <script src="script.js?v=4"></script>
   <noscript>Your browser has JavaScript disabled; animations are turned off.</noscript>
 </body>
 </html>
