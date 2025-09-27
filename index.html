@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Portfolio of Your Name: AI, Data, and Software Projects." />
+  <meta property="og:title" content="Your Name — Portfolio" />
+  <meta property="og:description" content="Selected projects, skills, and contact info." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero" id="top">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="#top">Your Name</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <div class="hero-inner">
+      <img src="assets/profile.jpg" alt="Headshot of Your Name" class="avatar" />
+      <h1>Hi, I’m <span class="accent">Your Name</span>.</h1>
+      <p class="tagline">AI & Business Analytics · Data Science · Software</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#projects">See Projects</a>
+        <a class="btn ghost" href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+    <div class="scroll-indicator" aria-hidden="true">▾</div>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>
+        I’m a graduate student focused on AI and analytics. I build practical solutions across logistics,
+        healthcare, and e-commerce with Python, SQL, and modern ML. I like turning data into decisions,
+        and ideas into shipped features.
+      </p>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+
+      <article class="card">
+        <div class="card-body">
+          <h3>AI-Powered Port Logistics</h3>
+          <p>
+            Container detection from satellite imagery using Faster R-CNN; improved yard utilization estimates.
+            Includes training scripts, evaluation notebook, and demo visuals.
+          </p>
+          <ul class="meta">
+            <li>Python</li><li>PyTorch</li><li>Computer Vision</li>
+          </ul>
+          <div class="actions">
+            <a class="btn small" href="https://github.com/your-username/port-logistics" target="_blank" rel="noopener">Repo</a>
+            <a class="btn small ghost" href="#" target="_blank" rel="noopener">Live</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <h3>Crime Intelligence ML</h3>
+          <p>
+            Predictive modeling on Chicago crime data with Logistic Regression, Random Forest, and MLP;
+            features engineered for seasonality and location; dashboard for insights.
+          </p>
+          <ul class="meta">
+            <li>Python</li><li>scikit-learn</li><li>Dash</li>
+          </ul>
+          <div class="actions">
+            <a class="btn small" href="https://github.com/your-username/crime-intelligence" target="_blank" rel="noopener">Repo</a>
+            <a class="btn small ghost" href="#" target="_blank" rel="noopener">Live</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="chips">
+        <span>Python</span><span>R</span><span>SQL</span><span>PyTorch</span><span>scikit-learn</span>
+        <span>TensorFlow</span><span>Git</span><span>GitHub Actions</span><span>AWS</span><span>Spark</span>
+        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>
+        Email: <a href="mailto:you@example.com">you@example.com</a> ·
+        LinkedIn: <a href="https://linkedin.com/in/your-handle" target="_blank" rel="noopener">linkedin.com/in/your-handle</a>
+      </p>
+      <!-- Replace the Formspree action URL with yours, or remove this form -->
+      <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+        <input aria-label="Your name" type="text" name="name" placeholder="Your name" required />
+        <input aria-label="Your email" type="email" name="email" placeholder="Your email" required />
+        <textarea aria-label="Your message" name="message" rows="4" placeholder="Your message"></textarea>
+        <button class="btn primary" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Your Name · Built with HTML/CSS · Hosted on GitHub Pages</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <noscript>Your browser has JavaScript disabled; animations are turned off.</noscript>
+</body>
+</html>
