@@ -8,14 +8,19 @@
   <meta property="og:title" content="Hammaz Buksh — Portfolio" />
   <meta property="og:description" content="Selected projects, skills, experience, and contact info." />
   <meta property="og:type" content="website" />
+  <!-- Favicon optional; remove if you don't want it
   <link rel="icon" href="assets/favicon.png" />
+  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <!-- cache-busted to avoid stale CSS when you update -->
-  <link rel="stylesheet" href="style.css?v=2" />
+  <link rel="stylesheet" href="style.css?v=3" />
 </head>
 <body>
+  <!-- Animated background layers -->
+  <div class="bg grid"></div>
+  <div class="bg glow"></div>
+
   <header class="hero" id="top">
     <nav class="nav" aria-label="Primary">
       <a class="brand" href="#top">Hammaz Buksh</a>
@@ -25,16 +30,17 @@
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
+        <a class="gh" href="https://github.com/Hammazb" target="_blank" rel="noopener">GitHub</a>
       </div>
     </nav>
 
     <div class="hero-inner">
       <img src="assets/profile.jpg" alt="Headshot of Hammaz Buksh" class="avatar" />
       <h1>Hi, I’m <span class="accent">Hammaz Buksh</span>.</h1>
-      <p class="tagline">AI & Business Analytics · Data Science · Multi-Agent Systems</p>
+      <p class="tagline">AI &amp; Business Analytics · Data Science · Multi-Agent Systems</p>
       <div class="cta-row">
         <a class="btn primary" href="#projects">See Projects</a>
-        <a class="btn ghost" href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn ghost" href="#contact">Contact</a>
       </div>
     </div>
     <div class="scroll-indicator" aria-hidden="true">▾</div>
@@ -43,62 +49,52 @@
   <main>
     <!-- ABOUT -->
     <section id="about" class="section">
-      <h2>About Me</h2>
+      <h2 class="section-title">About Me</h2>
       <p>
-        I’m a graduate student in Artificial Intelligence & Business Analytics at the University of South Florida.
-        I work across multi-agent AI systems, ETL pipelines, deep learning, and BI dashboards—building practical
-        solutions for logistics, healthcare, e-commerce, and hospitality that turn data into decisions and ideas into shipped features.
+        I’m a graduate student in Artificial Intelligence &amp; Business Analytics at the University of South Florida.
+        I build practical solutions across logistics, healthcare, e-commerce, and hospitality—working with multi-agent AI,
+        ETL pipelines, deep learning, and BI dashboards to turn data into decisions and ideas into shipped features.
       </p>
     </section>
 
     <!-- PROJECTS -->
     <section id="projects" class="section">
-      <h2>Projects</h2>
+      <h2 class="section-title">Projects</h2>
 
       <article class="card">
         <div class="card-body">
-          <h3>Crime Intelligence (ML)</h3>
+          <h3>UTKFace — Ethnicity Classification (PyTorch)</h3>
           <p>
-            Predictive models to forecast arrests and identify high-risk crime zones; feature engineering for seasonality and geography.
-          </p>
-          <ul class="meta"><li>Python</li><li>scikit-learn</li><li>ML</li></ul>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-body">
-          <h3>Cardiomegaly Detection (CNN/ViTs)</h3>
-          <p>
-            Deep learning on chest X-rays to detect enlarged hearts; compared CNNs and Vision Transformers with visualization for interpretability.
-          </p>
-          <ul class="meta"><li>TensorFlow</li><li>Deep Learning</li><li>Healthcare AI</li></ul>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-body">
-          <h3>Ship Detection (Mask R-CNN)</h3>
-          <p>
-            Satellite-imagery segmentation pipeline to identify vessels for maritime surveillance and port security.
-          </p>
-          <ul class="meta"><li>Python</li><li>Mask R-CNN</li><li>Computer Vision</li></ul>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-body">
-          <h3>UTKFace Ethnicity Classification</h3>
-          <p>
-            PyTorch CNN with augmentation and rebalancing to classify ethnicity; focused on dataset balance and fairness.
+            PyTorch CNN with augmentation and rebalancing to classify ethnicity on UTKFace.
+            Emphasis on dataset balance and fair evaluation; clear training scripts and results.
           </p>
           <ul class="meta"><li>PyTorch</li><li>Computer Vision</li><li>Fair ML</li></ul>
+          <div class="actions">
+            <a class="btn small" href="https://github.com/Hammazb/Using-CNN-to-Classify-Ethnicity-Pytorch" target="_blank" rel="noopener">Repo</a>
+          </div>
         </div>
       </article>
+
+      <article class="card">
+        <div class="card-body">
+          <h3>Predicting Arrests with ML Models</h3>
+          <p>
+            Forecasts arrests and highlights high-risk crime zones. Feature engineering for seasonality/geography;
+            models include Logistic Regression, Random Forest, and MLP with evaluation and comparisons.
+          </p>
+          <ul class="meta"><li>Python</li><li>scikit-learn</li><li>ML</li></ul>
+          <div class="actions">
+            <a class="btn small" href="https://github.com/Hammazb/Predicting-Arrests-with-ML-Models" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Optional: add more project cards here -->
     </section>
 
     <!-- SKILLS -->
     <section id="skills" class="section">
-      <h2>Skills</h2>
+      <h2 class="section-title">Skills</h2>
       <div class="chips">
         <span>Python</span><span>R</span><span>SQL</span><span>JavaScript</span>
         <span>scikit-learn</span><span>Pandas</span><span>NumPy</span><span>LangChain</span>
@@ -111,15 +107,14 @@
 
     <!-- EXPERIENCE -->
     <section id="experience" class="section">
-      <h2>Experience</h2>
+      <h2 class="section-title">Experience</h2>
 
       <article class="card">
         <div class="card-body">
-          <h3>AI Engineer, Intern — TD SYNNEX (May–Aug 2025)</h3>
+          <h3>AI Engineer (Intern) — TD SYNNEX</h3>
           <p>
             Built a multi-agent system with NVIDIA NeMo (planner/executor ReAct + ReWOO), custom tools (navigation, reviews, wait-times,
-            ride-hailing, knowledge search), preference memory, safety guardrails, and RAG. Delivered a production-ready PoC demo for
-            TD SYNNEX Inspire, showcased to partners (Amazon, Google, NVIDIA, Dell, HPE).
+            ride-hailing, knowledge search), preference memory, safety guardrails, and RAG. Delivered a production-ready PoC for TD SYNNEX Inspire.
           </p>
           <ul class="meta"><li>NeMo</li><li>RAG</li><li>Tool-augmented reasoning</li></ul>
         </div>
@@ -127,51 +122,23 @@
 
       <article class="card">
         <div class="card-body">
-          <h3>Graduate Assistant — University of South Florida (Aug 2025–Present)</h3>
+          <h3>Graduate Assistant — University of South Florida</h3>
           <p>
-            Supported “Introduction to Python” course delivery; graded 200+ assignments; held labs and 1-on-1 sessions; improved learning outcomes with feedback and resources.
+            Supported “Introduction to Python” course delivery; graded 200+ assignments; led labs and 1-on-1 sessions; improved learning outcomes through resources and feedback.
           </p>
           <ul class="meta"><li>Teaching</li><li>Python</li><li>Academic Support</li></ul>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-body">
-          <h3>Research Assistant / Independent Study — USF (Jan–May 2025)</h3>
-          <p>
-            Deployed TensorFlow models for vessel detection in satellite data; built preprocessing/augmentation pipelines (OpenCV/NumPy);
-            documented architecture and training workflows.
-          </p>
-          <ul class="meta"><li>TensorFlow</li><li>OpenCV</li><li>DL Pipelines</li></ul>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-body">
-          <h3>Optimization Specialist — Action Holdings (Oct 2022–Jul 2024)</h3>
-          <p>
-            Launched products via market research; designed advertising/pricing/PPC strategies (+45% sales; valuation $500K → $3M);
-            automated reporting and dashboards; improved ROI by 60%; partnered with leadership on forecasting and ops efficiency.
-          </p>
-          <ul class="meta"><li>PPC</li><li>Analytics</li><li>Automation</li></ul>
         </div>
       </article>
     </section>
 
     <!-- CONTACT -->
     <section id="contact" class="section">
-      <h2>Contact</h2>
+      <h2 class="section-title">Contact</h2>
       <p>
         Email: <a href="mailto:mhammaz98@gmail.com">mhammaz98@gmail.com</a> ·
-        LinkedIn: <a href="https://linkedin.com/in/hammazbuksh" target="_blank" rel="noopener">linkedin.com/in/hammazbuksh</a>
+        LinkedIn: <a href="https://linkedin.com/in/hammazbuksh" target="_blank" rel="noopener">linkedin.com/in/hammazbuksh</a> ·
+        GitHub: <a href="https://github.com/Hammazb" target="_blank" rel="noopener">github.com/Hammazb</a>
       </p>
-      <!-- Optional: connect a Formspree endpoint and keep this form -->
-      <!-- <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
-        <input aria-label="Your name" type="text" name="name" placeholder="Your name" required />
-        <input aria-label="Your email" type="email" name="email" placeholder="Your email" required />
-        <textarea aria-label="Your message" name="message" rows="4" placeholder="Your message"></textarea>
-        <button class="btn primary" type="submit">Send</button>
-      </form> -->
     </section>
   </main>
 
@@ -179,7 +146,7 @@
     <p>© <span id="year"></span> Hammaz Buksh · Built with HTML/CSS · Hosted on GitHub Pages</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=3"></script>
   <noscript>Your browser has JavaScript disabled; animations are turned off.</noscript>
 </body>
 </html>
