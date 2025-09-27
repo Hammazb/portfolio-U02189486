@@ -135,4 +135,20 @@ h2.section-title::after{
 }
 .chips span:hover{transform:translateY(-2px); box-shadow:0 8px 18px rgba(167,139,250,.18)}
 
+#Below this code
+
+/* --- Contact link color fix (force white for all states) --- */
+#contact .contact-line { color: var(--text); }
+
+#contact .contact-line a,
+#contact .contact-line a:link,
+#contact .contact-line a:visited,
+#contact .contact-line a:hover,
+#contact .contact-line a:active {
+  color: var(--text) !important;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1.5px;
+}
+
 /* ====== C*
