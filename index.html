@@ -3,33 +3,35 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Name — Portfolio</title>
-  <meta name="description" content="Portfolio of Your Name: AI, Data, and Software Projects." />
-  <meta property="og:title" content="Your Name — Portfolio" />
-  <meta property="og:description" content="Selected projects, skills, and contact info." />
+  <title>Hammaz Buksh — Portfolio</title>
+  <meta name="description" content="Portfolio of Hammaz Buksh: AI, Data, and Software Projects." />
+  <meta property="og:title" content="Hammaz Buksh — Portfolio" />
+  <meta property="og:description" content="Selected projects, skills, experience, and contact info." />
   <meta property="og:type" content="website" />
   <link rel="icon" href="assets/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <!-- cache-busted to avoid stale CSS when you update -->
+  <link rel="stylesheet" href="style.css?v=2" />
 </head>
 <body>
   <header class="hero" id="top">
     <nav class="nav" aria-label="Primary">
-      <a class="brand" href="#top">Your Name</a>
+      <a class="brand" href="#top">Hammaz Buksh</a>
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
 
     <div class="hero-inner">
-      <img src="assets/profile.jpg" alt="Headshot of Your Name" class="avatar" />
-      <h1>Hi, I’m <span class="accent">Your Name</span>.</h1>
-      <p class="tagline">AI & Business Analytics · Data Science · Software</p>
+      <img src="assets/profile.jpg" alt="Headshot of Hammaz Buksh" class="avatar" />
+      <h1>Hi, I’m <span class="accent">Hammaz Buksh</span>.</h1>
+      <p class="tagline">AI & Business Analytics · Data Science · Multi-Agent Systems</p>
       <div class="cta-row">
         <a class="btn primary" href="#projects">See Projects</a>
         <a class="btn ghost" href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
@@ -39,80 +41,142 @@
   </header>
 
   <main>
+    <!-- ABOUT -->
     <section id="about" class="section">
       <h2>About Me</h2>
       <p>
-        I’m a graduate student focused on AI and analytics. I build practical solutions across logistics,
-        healthcare, and e-commerce with Python, SQL, and modern ML. I like turning data into decisions,
-        and ideas into shipped features.
+        I’m a graduate student in Artificial Intelligence & Business Analytics at the University of South Florida.
+        I work across multi-agent AI systems, ETL pipelines, deep learning, and BI dashboards—building practical
+        solutions for logistics, healthcare, e-commerce, and hospitality that turn data into decisions and ideas into shipped features.
       </p>
     </section>
 
+    <!-- PROJECTS -->
     <section id="projects" class="section">
       <h2>Projects</h2>
 
       <article class="card">
         <div class="card-body">
-          <h3>AI-Powered Port Logistics</h3>
+          <h3>Crime Intelligence (ML)</h3>
           <p>
-            Container detection from satellite imagery using Faster R-CNN; improved yard utilization estimates.
-            Includes training scripts, evaluation notebook, and demo visuals.
+            Predictive models to forecast arrests and identify high-risk crime zones; feature engineering for seasonality and geography.
           </p>
-          <ul class="meta">
-            <li>Python</li><li>PyTorch</li><li>Computer Vision</li>
-          </ul>
-          <div class="actions">
-            <a class="btn small" href="https://github.com/your-username/port-logistics" target="_blank" rel="noopener">Repo</a>
-            <a class="btn small ghost" href="#" target="_blank" rel="noopener">Live</a>
-          </div>
+          <ul class="meta"><li>Python</li><li>scikit-learn</li><li>ML</li></ul>
         </div>
       </article>
 
       <article class="card">
         <div class="card-body">
-          <h3>Crime Intelligence ML</h3>
+          <h3>Cardiomegaly Detection (CNN/ViTs)</h3>
           <p>
-            Predictive modeling on Chicago crime data with Logistic Regression, Random Forest, and MLP;
-            features engineered for seasonality and location; dashboard for insights.
+            Deep learning on chest X-rays to detect enlarged hearts; compared CNNs and Vision Transformers with visualization for interpretability.
           </p>
-          <ul class="meta">
-            <li>Python</li><li>scikit-learn</li><li>Dash</li>
-          </ul>
-          <div class="actions">
-            <a class="btn small" href="https://github.com/your-username/crime-intelligence" target="_blank" rel="noopener">Repo</a>
-            <a class="btn small ghost" href="#" target="_blank" rel="noopener">Live</a>
-          </div>
+          <ul class="meta"><li>TensorFlow</li><li>Deep Learning</li><li>Healthcare AI</li></ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <h3>Ship Detection (Mask R-CNN)</h3>
+          <p>
+            Satellite-imagery segmentation pipeline to identify vessels for maritime surveillance and port security.
+          </p>
+          <ul class="meta"><li>Python</li><li>Mask R-CNN</li><li>Computer Vision</li></ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <h3>UTKFace Ethnicity Classification</h3>
+          <p>
+            PyTorch CNN with augmentation and rebalancing to classify ethnicity; focused on dataset balance and fairness.
+          </p>
+          <ul class="meta"><li>PyTorch</li><li>Computer Vision</li><li>Fair ML</li></ul>
         </div>
       </article>
     </section>
 
+    <!-- SKILLS -->
     <section id="skills" class="section">
       <h2>Skills</h2>
       <div class="chips">
-        <span>Python</span><span>R</span><span>SQL</span><span>PyTorch</span><span>scikit-learn</span>
-        <span>TensorFlow</span><span>Git</span><span>GitHub Actions</span><span>AWS</span><span>Spark</span>
-        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        <span>Python</span><span>R</span><span>SQL</span><span>JavaScript</span>
+        <span>scikit-learn</span><span>Pandas</span><span>NumPy</span><span>LangChain</span>
+        <span>TensorFlow</span><span>PyTorch</span><span>Power BI</span><span>Tableau</span>
+        <span>Excel</span><span>Git</span><span>VS Code</span><span>Jupyter</span><span>Airflow</span>
+        <span>MongoDB</span><span>Cassandra</span><span>Hive</span><span>Spark</span>
+        <span>Hadoop</span><span>Snowflake</span><span>Cloudera</span><span>MySQL</span><span>PostgreSQL</span>
       </div>
     </section>
 
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+
+      <article class="card">
+        <div class="card-body">
+          <h3>AI Engineer, Intern — TD SYNNEX (May–Aug 2025)</h3>
+          <p>
+            Built a multi-agent system with NVIDIA NeMo (planner/executor ReAct + ReWOO), custom tools (navigation, reviews, wait-times,
+            ride-hailing, knowledge search), preference memory, safety guardrails, and RAG. Delivered a production-ready PoC demo for
+            TD SYNNEX Inspire, showcased to partners (Amazon, Google, NVIDIA, Dell, HPE).
+          </p>
+          <ul class="meta"><li>NeMo</li><li>RAG</li><li>Tool-augmented reasoning</li></ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <h3>Graduate Assistant — University of South Florida (Aug 2025–Present)</h3>
+          <p>
+            Supported “Introduction to Python” course delivery; graded 200+ assignments; held labs and 1-on-1 sessions; improved learning outcomes with feedback and resources.
+          </p>
+          <ul class="meta"><li>Teaching</li><li>Python</li><li>Academic Support</li></ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <h3>Research Assistant / Independent Study — USF (Jan–May 2025)</h3>
+          <p>
+            Deployed TensorFlow models for vessel detection in satellite data; built preprocessing/augmentation pipelines (OpenCV/NumPy);
+            documented architecture and training workflows.
+          </p>
+          <ul class="meta"><li>TensorFlow</li><li>OpenCV</li><li>DL Pipelines</li></ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <h3>Optimization Specialist — Action Holdings (Oct 2022–Jul 2024)</h3>
+          <p>
+            Launched products via market research; designed advertising/pricing/PPC strategies (+45% sales; valuation $500K → $3M);
+            automated reporting and dashboards; improved ROI by 60%; partnered with leadership on forecasting and ops efficiency.
+          </p>
+          <ul class="meta"><li>PPC</li><li>Analytics</li><li>Automation</li></ul>
+        </div>
+      </article>
+    </section>
+
+    <!-- CONTACT -->
     <section id="contact" class="section">
       <h2>Contact</h2>
       <p>
-        Email: <a href="mailto:you@example.com">you@example.com</a> ·
-        LinkedIn: <a href="https://linkedin.com/in/your-handle" target="_blank" rel="noopener">linkedin.com/in/your-handle</a>
+        Email: <a href="mailto:mhammaz98@gmail.com">mhammaz98@gmail.com</a> ·
+        LinkedIn: <a href="https://linkedin.com/in/hammazbuksh" target="_blank" rel="noopener">linkedin.com/in/hammazbuksh</a>
       </p>
-      <!-- Replace the Formspree action URL with yours, or remove this form -->
-      <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+      <!-- Optional: connect a Formspree endpoint and keep this form -->
+      <!-- <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
         <input aria-label="Your name" type="text" name="name" placeholder="Your name" required />
         <input aria-label="Your email" type="email" name="email" placeholder="Your email" required />
         <textarea aria-label="Your message" name="message" rows="4" placeholder="Your message"></textarea>
         <button class="btn primary" type="submit">Send</button>
-      </form>
+      </form> -->
     </section>
   </main>
 
   <footer class="footer">
-    <p>© <span id="year"></span> Your Name · Built with HTML/CSS · Hosted on GitHub Pages</p>
+    <p>© <span id="year"></span> Hammaz Buksh · Built with HTML/CSS · Hosted on GitHub Pages</p>
   </footer>
 
   <script src="script.js"></script>
